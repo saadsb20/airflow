@@ -2816,11 +2816,14 @@ cleanup:
 # Not recommended for production
 postgresql:
   enabled: true
+  global:
+    storageClass: ""
   auth:
     enablePostgresUser: true
     postgresPassword: postgres
     username: ""
     password: ""
+  
 
 # Config settings to go into the mounted airflow.cfg
 #
